@@ -15,7 +15,7 @@ public Plugin myinfo =
 	url = "https://steamcommunity.com/id/ByDexterTR - ByDexter#5494"
 };
 
-bool GagGor[65] =  { false, ... };
+bool GagGor[65] = { false, ... };
 
 public void OnPluginStart()
 {
@@ -43,7 +43,7 @@ public Action OnClientSayCommand(int client, const char[] command, const char[] 
 	{
 		LoopClientsCustom(i)
 		{
-			PrintToChat(client, "\x04[CEZALI] \x02%N\x01: %s", client, sArgs);
+			PrintToChat(i, "\x07[CEZALI] \x10%N\x01: %s", client, sArgs);
 		}
 	}
 } 
